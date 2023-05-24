@@ -1,0 +1,115 @@
+<Program>
+ <TopLevelForm>
+  LEFTPAR (()
+  <SecondLevelForm>
+   <Definition>
+    DEFINE (define)
+    <DefinitionRight>
+     LEFTPAR (()
+     IDENTIFIER (fibonacci)
+     <ArgList>
+      IDENTIFIER (n)
+      <ArgList>
+       __
+     RIGHTPAR ())
+     <Statements>
+      <Expression>
+       LEFTPAR (()
+       <Expr>
+        <LetExpression>
+         LET (let)
+         <LetExpr>
+          IDENTIFIER (fib)
+          LEFTPAR (()
+          <VarDefs>
+           LEFTPAR (()
+           IDENTIFIER (prev)
+           <Expression>
+            NUMBER (0)
+           RIGHTPAR ())
+           <VarDef>
+            <VarDefs>
+             LEFTPAR (()
+             IDENTIFIER (cur)
+             <Expression>
+              NUMBER (1)
+             RIGHTPAR ())
+             <VarDef>
+              <VarDefs>
+               LEFTPAR (()
+               IDENTIFIER (i)
+               <Expression>
+                NUMBER (0)
+               RIGHTPAR ())
+               <VarDef>
+                __
+          RIGHTPAR ())
+          <Statements>
+           <Expression>
+            LEFTPAR (()
+            <Expr>
+             <IfExpression>
+              IF (if)
+              <Expression>
+               LEFTPAR (()
+               <Expr>
+                <FunCall>
+                 IDENTIFIER (=)
+                 <Expressions>
+                  <Expression>
+                   IDENTIFIER (i)
+                  <Expressions>
+                   <Expression>
+                    IDENTIFIER (n)
+                   <Expressions>
+                    __
+               RIGHTPAR ())
+              <Expression>
+               IDENTIFIER (cur)
+              <EndExpression>
+               <Expression>
+                LEFTPAR (()
+                <Expr>
+                 <FunCall>
+                  IDENTIFIER (fib)
+                  <Expressions>
+                   <Expression>
+                    IDENTIFIER (cur)
+                   <Expressions>
+                    <Expression>
+                     LEFTPAR (()
+                     <Expr>
+                      <FunCall>
+                       IDENTIFIER (+)
+                       <Expressions>
+                        <Expression>
+                         IDENTIFIER (prev)
+                        <Expressions>
+                         <Expression>
+                          IDENTIFIER (cur)
+                         <Expressions>
+                          __
+                     RIGHTPAR ())
+                    <Expressions>
+                     <Expression>
+                      LEFTPAR (()
+                      <Expr>
+                       <FunCall>
+                        IDENTIFIER (+)
+                        <Expressions>
+                         <Expression>
+                          IDENTIFIER (i)
+                         <Expressions>
+                          <Expression>
+                           NUMBER (1)
+                          <Expressions>
+                           __
+                      RIGHTPAR ())
+                     <Expressions>
+                      __
+                RIGHTPAR ())
+            RIGHTPAR ())
+       RIGHTPAR ())
+  RIGHTPAR ())
+ <Program>
+  __
